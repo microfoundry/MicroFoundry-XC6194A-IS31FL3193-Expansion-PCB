@@ -14,10 +14,10 @@ The Micro Foundry XC6194A IS31FL3193 RGB Expansion PCB provides the ability to d
 - Over-temperature protection
 - Operating temperature TA = −40°C ~ +85°C 
 - 4x I2C addresses
-- MCU controlled global shutdown in addition to software based shutdown
+- MCU controlled global shutdown in addition to software-based shutdown
 - Breathing mark output signal for optional timed MCU control
 
-**Please NOTE:** Color representation is totally dependant on the LEDs utilized. Therefore there are no guarentees this LED driver will have the ability to produce the accurite color representation possible with 3x LEDs.
+**Please NOTE:** Color representation is totally dependent on the LEDs utilized. Therefore, there are no guarantees this LED driver will have the ability to produce the accurate color representation possible with 3x LEDs.
 
 ## Expansion PCB Features
 - 3 Channels of LED switching with constant current control
@@ -50,7 +50,7 @@ The Micro Foundry XC6194A IS31FL3193 RGB Expansion PCB provides the ability to d
 | 5 | V_BM | Breathing Mark | Input | MCU VCC |
 | 6 | SDB | IS31FL3193 Hardware Shutdown | Output (Active LOW) | MCU VCC |
 
-**NOTE-1:** The Power Good Output is traditionally uitilized to enable a downstream power supply, therefore the output operates at XC6194A VIn Potential. Please verify voltage compatability before connecting.
+**NOTE-1:** The Power Good Output is traditionally utilized to enable a downstream power supply, therefore the output operates at XC6194A VIn Potential. Please verify voltage compatibility before connecting.
 
 ### Expansion
 
@@ -63,7 +63,7 @@ The Micro Foundry XC6194A IS31FL3193 RGB Expansion PCB provides the ability to d
 | 5 | PG | XC6194A Power Good | Output (Active HIGH) | XC6194A VIn |
 | 6 | SHDN | XC6194A Shutdown | Input (Active HIGH) **See NOTE-2** | GND |
 
-**NOTE-2:** Circuit is pulled to GND via pull-down resistor. XC6149A datasheet specifies a voltage level above 1.1v will trigger shutdown. Some MCUs may exihibit an output glitch on the SHDN during power-up and the XC6194 may immediately shutdown. If this is experienced, a user implemented RC filter could possibly eliminate the issue.
+**NOTE-2:** Circuit is pulled to GND via pull-down resistor. XC6149A datasheet specifies a voltage level above 1.1v will trigger shutdown. Some MCUs may exhibit an output glitch on the SHDN during power-up and the XC6194 may immediately shutdown. If this is experienced, a user implemented RC filter could possibly eliminate the issue.
 
 ### STEMMA QT / Qwiic i2c 
 
@@ -79,7 +79,7 @@ The Micro Foundry XC6194A IS31FL3193 RGB Expansion PCB provides the ability to d
 **TODO:** Add image to indicate i2c pull-up location...
 
 ## Power State Channel
-Channel 1 LED has a SPDT analog switch with its input referenced to VOut. When the XC6194A is in its off-state, the switch will connect the Channel 1 LED cathode to GND, therefore illuminating the LED. This can be useful to provide a visual indicator that the power is off. When the XC6194A is in its on-state, the switch will connect the Channel 1 LED cathode to the WS2811 which will be free to drive the LED. If there is no desire to have the Channel 1 LED illuminated when the power is off, this feature can disabled by relocating the R1/R2 resistor as indicated in the following image:
+Channel 1 LED has a SPDT analog switch with its input referenced to VOut. When the XC6194A is in its off-state, the switch will connect the Channel 1 LED cathode to GND, therefore illuminating the LED. This can be useful to provide a visual indicator that the power is off. When the XC6194A is in its on-state, the switch will connect the Channel 1 LED cathode to the WS2811 which will be free to drive the LED. If there is no desire to have the Channel 1 LED illuminated when the power is off, this feature can be disabled by relocating the R1/R2 resistor as indicated in the following image:
 
 **TODO:** Add image to indicate R1/R2 relocation...
 
