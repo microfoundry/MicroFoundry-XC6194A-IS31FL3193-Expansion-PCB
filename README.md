@@ -79,7 +79,7 @@ The Micro Foundry XC6194A IS31FL3193 RGB Expansion PCB provides the ability to d
 **TODO:** Add image to indicate i2c pull-up location...
 
 ## Power State Channel
-Channel 1 LED has a SPDT analog switch with its input referenced to VOut. When the XC6194A is in its off-state, the switch will connect the Channel 1 LED cathode to GND, therefore illuminating the LED. This can be useful to provide a vsual indicator that the power is off. When the XC6194A is in its on-state, the switch will connect the Channel 1 LED cathode to the WS2811 which will be free to drive the LED. If there is no desire to have the Channel 1 LED illuminated when the power is off, this feature can disabled by relocating the R1/R2 resistor as indicated in the following image:
+Channel 1 LED has a SPDT analog switch with its input referenced to VOut. When the XC6194A is in its off-state, the switch will connect the Channel 1 LED cathode to GND, therefore illuminating the LED. This can be useful to provide a visual indicator that the power is off. When the XC6194A is in its on-state, the switch will connect the Channel 1 LED cathode to the WS2811 which will be free to drive the LED. If there is no desire to have the Channel 1 LED illuminated when the power is off, this feature can disabled by relocating the R1/R2 resistor as indicated in the following image:
 
 **TODO:** Add image to indicate R1/R2 relocation...
 
