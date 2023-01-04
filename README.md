@@ -2,7 +2,7 @@
 Information about the XC6194A Expansion PCB based on the IS31FL3193 IC to drive 3 LEDs and discrete logic to provide voltage translation
 
 ## Why?
-I utilize the TOREX XC6194A in various projects i2c is always available too. The IS31FL3193 RGB driver provides a unique set of features to redeuce MCU code making it an natural accessory to complement the XC6194 breakout.
+I utilize the TOREX XC6194A in various projects and i2c is always available too. The IS31FL3193 RGB driver provides a unique set of features to redeuce MCU code making it an natural accessory to complement the XC6194 breakout.
 
 ## Description
 The Micro Foundry XC6194A IS31FL3193 RGB Expansion PCB provides the ability to drive a RGB LED illuminated Momentary switch or up to 3 individual LED indicators (with common anode) in addition to offering voltage translation where the XC6194A switched VCC differs from MCU VCC. 
